@@ -1,4 +1,4 @@
-d3.json('samples.json').then(function(theData)) {
+d3.json('samples.json').then(function(theData) {
     var values = theData['samples'][0]['sample_values'];
     var labels = theData['samples'][0]['otu_ids'];
     var hovertext = theData['samples'][0]['otu_labels'];
@@ -7,14 +7,14 @@ d3.json('samples.json').then(function(theData)) {
     var data = [{
         type: "bar",
         x: labels,
-        y:values
+        y: values
     }];
 
     var layout = {
-        margin: { 1: 0, b:0, t:0}
-        width:450,
+        margin: { 1: 0, b:0, t:0},
+        width: 450,
         height:450
     };
 
     Plotly.newPlot('something', data, layout);
-}
+})
