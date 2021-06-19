@@ -16,5 +16,5 @@ d3.json('samples.json').then(function(theData) {
         height:450
     };
 
-    Plotly.newPlot('something', data, layout);
+    Plotly.newPlot('bar', data, layout);
 })
